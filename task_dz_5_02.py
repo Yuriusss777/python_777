@@ -11,7 +11,7 @@ extra = ['10.25%', '20.55%', '25.50%', '30.05%']
 
 
 def extra_serializer(names: list[str], salary: list[int], extra: list[str]) -> dict[str: float]:
-    return {name: sal / 100 * ext for name, sal, ext in zip(names, salary, (float(i[:-1]) for i in extra))}.items()
+    return {name: sal / TO_DECIMAL * ext for name, sal, ext in zip(names, salary, (float(i[:-1]) for i in extra))}.items()
 
 
 print(*(extra_serializer(names, salary, extra)))
