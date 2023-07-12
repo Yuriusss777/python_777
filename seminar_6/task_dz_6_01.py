@@ -2,7 +2,6 @@
 
 from sys import argv
 
-
 def date_check(date: str) -> bool:
     day, month, year = map(int, date.split('.'))
     if 0 < day <= 31 and 0 < month <= 12 and 1 <= year <= 9999:
@@ -19,7 +18,5 @@ def _vis_year(date: str) -> bool:
         return False
 
 
-if __name__ == '__main__':
-# # name = argv
-    a = argv['seminar_6\task_dz_6_01.py', '01.01.2002']
-    print(date_check(a))
+print(date_check(argv[1]))
+print(_vis_year(argv[1]))
