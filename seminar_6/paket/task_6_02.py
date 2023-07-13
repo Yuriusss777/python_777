@@ -14,6 +14,8 @@
 from random import randint
 from sys import argv
 
+__all__ = ['ugadaika']
+
 
 def ugadaika(start: int, stop: int, tries: int) -> bool:
     """Функция принимает на вход три целых числа: нижнюю и верхнюю границу и количество попыток.

@@ -4,6 +4,8 @@
 # Весь период (1 января 1 года - 31 декабря 9999 года) действует Григорианский календарь.
 # Проверку года на високосность вынести в отдельную защищённую функцию.
 
+__all__ = ['date_check', '_vis_year']
+
 
 def date_check(date: str) -> bool:
     day, month, year = map(int, date.split('.'))
@@ -12,6 +14,7 @@ def date_check(date: str) -> bool:
     else:
         return True
 
+
 def _vis_year(date: str) -> bool:
     day, month, year = map(int, date.split('.'))
     if year % 4 == 0:
@@ -19,10 +22,7 @@ def _vis_year(date: str) -> bool:
     else:
         return False
 
+
 if __name__ == '__main__':
     print(date_check('30.01.2002'))
     print(_vis_year('30.01.2008'))
-
-
-
-
