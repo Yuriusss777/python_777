@@ -39,3 +39,5 @@ if __name__ == '__main__':
     TRIRD_ARG = 4
     st, end, tr, = tuple(map(int, argv[FIRST_ARG:TRIRD_ARG]))
     print(ugadaika(st, end, tr))
+
+# print(argv)
