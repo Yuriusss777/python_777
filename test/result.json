@@ -1,0 +1,1 @@
+[{"name": "result.csv", "parent": "test", "type": "file", "size": 71}, {"name": "result.json", "parent": "test", "type": "file", "size": 138}, {"name": "result.pickle", "parent": "test", "type": "file", "size": 112}, {"name": "test.py", "parent": "test", "type": "file", "size": 83}, {"name": "test_2.py", "parent": "test", "type": "file", "size": 1849}]
